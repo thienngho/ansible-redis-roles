@@ -1,0 +1,5 @@
+---
+
+- import_tasks: build.yml
+  become: yes
+  tags: [build, redis]
