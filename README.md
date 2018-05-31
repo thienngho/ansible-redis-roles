@@ -14,7 +14,7 @@ Role Variables
 Listen ip:port
 
     redis_port: 6379
-    redis_bind: 127.0.0.1
+    redis_address: 127.0.0.1
 
 Connection timeout
 
@@ -41,4 +41,4 @@ Example Playbook
       - import_role:
           name: redis
         vars:
-            redis_bind: "{{ hostvars[groups['redisservers'][0]]['ansible_default_ipv4']['address'] }}"
+            redis_address: "{{ hostvars[groups['redisservers'][0]]['ansible_default_ipv4']['address'] }}"
