@@ -1,3 +1,4 @@
+---
 sudo: required
 language: python
 services:
@@ -7,6 +8,6 @@ before_install:
   - sudo apt-get install -o Dpkg::Options::="--force-confold" --force-yes -y docker-ce
 install:
   - pip install molecule
-  # - pip install required driver (e.g. docker, python-vagrant, shade)
+  - pip install docker
 script:
   - molecule test
