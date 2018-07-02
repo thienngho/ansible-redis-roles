@@ -10,6 +10,6 @@ before_install:
   - sudo apt-get update
   - sudo apt-get -y install docker-ce
 install:
-  - pip install molecule docker-py
+  - pip install molecule docker
 script:
   - molecule --debug test
