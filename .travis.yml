@@ -9,4 +9,4 @@ before_install:
 install:
   - pip install molecule docker-py
 script:
-  - molecule test
+  - molecule --debug test
