@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/thienngho/ansible-redis-roles.svg?branch=master)](https://travis-ci.org/thienngho/ansible-redis-roles)
+
 Role Name
 =========
 
