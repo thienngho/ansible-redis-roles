@@ -34,7 +34,8 @@ Database count
 Dependencies
 ------------
 
-None
+- Molecule
+- Docker
 
 Example Playbook
 ----------------
@@ -44,3 +45,8 @@ Example Playbook
           name: redis
         vars:
             redis_address: "{{ hostvars[groups['redisservers'][0]]['ansible_default_ipv4']['address'] }}"
+
+Test role with Molecule
+```
+molecule test
+```
